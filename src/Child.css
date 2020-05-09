@@ -1,3 +1,13 @@
 button {
-  color: white
+  color: white;
+  padding: 15px;
+  width: 150px;
+  outline: none;
+  font-size: 20px;
+}
+
+.main {
+  margin-left: 45%;
+  margin-top: 50%;
+  
 }

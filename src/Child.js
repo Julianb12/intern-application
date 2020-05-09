@@ -18,37 +18,25 @@ function Child(props) {
     )
   }
   
-  // function handlePlaceChange() {
-
-  //   {place = place + 10}
-  //   return place;
-  // }
- 
   if (props.blink === true){
     return (
-      <div>
-        <button style={
-          {backgroundColor:props.color, padding : 15 , marginTop : place }
-          } 
+      <div className="main">
+        <button style={{ backgroundColor : props.color, marginTop : place }} 
           onClick={handleColorChange}>
          change this 
         </button>
-  
       </div>
     )
   }else{
     return (
-      <div>
-        <button style={{ backgroundColor : props.color, padding : 15 , marginTop : place }}
-          onClick={() => setPlace(place + 10)}>
+      <div className="main">
+        <button style={{ backgroundColor : props.color, marginTop : place }}
+          onClick={() => setPlace(place + 25)}>
           change that 
         </button>
-  
       </div>
     )
   }
-
-   
 }
 
 export default Child
